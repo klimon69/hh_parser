@@ -118,7 +118,7 @@ for j in x:
                 fulladdr = i['address']
                 city = fulladdr['city']
             else:
-                city = "ЖОПА"
+                city = "NULL"
             f.write(str(avgsal) + " " + str(currency) + " " + pos + " " + str(date) + " " + str(city) + '\n')
 
             mySQLQuery = ("""INSERT INTO vacancy VALUES (?, ?, ?, ?, ?);""")
